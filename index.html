@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Tetris</h1>
+        <div id="score-container">
+            Score: <span id="score">0</span>
+        </div>
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <div id="game-over" class="hidden">
+            <h2>Game Over</h2>
+            <button id="restart-btn">Restart</button>
+        </div>
+        <div id="controls-hint">
+            <p>← → : 移動</p>
+            <p>↑ : 回転</p>
+            <p>↓ : 高速落下</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
